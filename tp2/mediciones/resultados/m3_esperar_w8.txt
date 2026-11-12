@@ -1,0 +1,7 @@
+serie esperar, workers 8
+
+     N  total s  tareas/s  espera prom  espera max  ejec prom  estados
+     8     1.11       7.2         0.00        0.00       1.00  completada
+    16     2.14       7.5         0.50        0.99       1.00  completada
+    64     8.12       7.9         3.44        6.91       1.00  completada
+   200    25.11       8.0        11.83       23.69       1.00  completada

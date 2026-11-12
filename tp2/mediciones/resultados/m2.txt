@@ -1,0 +1,4 @@
+hashear de 15000000 iteraciones
+
+en el loop     hash de 18.91 s | GET /tareas durante: 1 muestras, promedio 18897.2 ms, maximo 18897.2 ms (sin carga: 12.9 ms)
+con executor   hash de 19.65 s | GET /tareas durante: 193 muestras, promedio 2.7 ms, maximo 6.4 ms (sin carga: 6.5 ms)

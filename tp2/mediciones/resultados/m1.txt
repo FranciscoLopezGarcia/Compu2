@@ -1,0 +1,12 @@
+20 descargas de http://localhost:8001/demora/500
+
+rep 1 secuencial  servidor 10.215 s  cliente 10.311 s  errores 0
+rep 1 concurrente servidor 0.670 s  cliente 0.688 s  errores 0
+rep 2 secuencial  servidor 10.168 s  cliente 10.199 s  errores 0
+rep 2 concurrente servidor 0.610 s  cliente 0.642 s  errores 0
+rep 3 secuencial  servidor 10.164 s  cliente 10.183 s  errores 0
+rep 3 concurrente servidor 0.604 s  cliente 0.639 s  errores 0
+
+promedio secuencial  10.182 s
+promedio concurrente 0.628 s
+speedup 16.2x

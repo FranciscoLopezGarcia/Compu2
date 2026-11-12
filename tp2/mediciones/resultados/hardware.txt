@@ -1,0 +1,7 @@
+CPU: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+nucleos fisicos: 4, hilos: 8
+gobernador: powersave (frecuencia en reposo ~900 MHz)
+RAM total MB: 7594
+SO: Linux 7.0.0-42-generic
+Python: Python 3.12.3
+Ejecutado sin Docker, directo con uvicorn

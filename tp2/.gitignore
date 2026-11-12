@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+volcados/estado_*.json
+mediciones/resultados/*.json
+respuestas a preguntas.md

@@ -1,0 +1,26 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      WORKERS: ${WORKERS:-8}
+      PROCESOS: ${PROCESOS:-4}
+      TAMANO_COLA: ${TAMANO_COLA:-1000}
+      TIMEOUT_DEFECTO: ${TIMEOUT_DEFECTO:-60}
+      LIMITE_APAGADO: ${LIMITE_APAGADO:-10}
+      DIR_VOLCADOS: /app/volcados
+    volumes:
+      - volcados:/app/volcados
+    stop_grace_period: 30s
+    depends_on:
+      - lento
+
+  lento:
+    build: .
+    command: ["uvicorn", "lento.servidor:app", "--host", "0.0.0.0", "--port", "8001", "--no-access-log"]
+    ports:
+      - "8001:8001"
+
+volumes:
+  volcados:
